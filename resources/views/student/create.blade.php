@@ -33,9 +33,9 @@
         <div class="mb-3">
             <label>Grade:</label><br>
             <select name="grade" id="grade" style="width: 50px; border-radius: 5px; padding: 0px 10px 0px 0px;">
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
             </select>
             {{-- <input type="radio" name="grade" value="A"> A
             <input type="radio" name="grade" value="B"> B

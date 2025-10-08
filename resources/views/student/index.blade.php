@@ -45,8 +45,8 @@
                         <td>{{ $stu->phone }}</td>
                         <td>{{ $stu->nic }}</td>
                         <td>{{ $stu->address }}</td>
-                        <td><button class="btn btn-warning">edit</button>
-                            <button class="btn btn-danger">delete</button>
+                        <td><a href="{{ route('student.edit', $stu->id) }}" class="btn btn-warning">edit</a>
+                            <a class="btn btn-danger">delete</a>
                             {{-- <button class="btn btn-info">show</button> --}}
                         </td>
                     </tr>
