@@ -55,7 +55,8 @@ class StudentController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $stu = Student::findOrFail($id);
+        return view('student.edit', compact('stu'));
     }
 
     /**
@@ -63,7 +64,12 @@ class StudentController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $student = Student::findOrFail($id);
+        $student->first_name = $request->first_name;
+        $student->last_name = $request->last_name;
+        $student->save();
+
+        return redirect()->route('student.index')->with('success', 'Student updated successfully');
     }
 
     /**
