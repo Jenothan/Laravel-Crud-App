@@ -41,12 +41,12 @@
             
         </div>
 
-@php $subjects = explode(',',$stu['subjects']); @endphp
+    @php $subjects = explode(',',$stu['subjects']); @endphp
         <div class="mb-3">
             <label>Subjects:</label><br>
-            <input type="checkbox" name="subjects[]" value="Maths" @if(in_array('Maths',$stu->subjects)) checked @endif> Maths
-            <input type="checkbox" name="subjects[]" value="Science" @if(in_array('Science',$stu->subjects)) checked @endif> Science
-            <input type="checkbox" name="subjects[]" value="English" @if(in_array('English',$stu->subjects)) checked @endif> English
+            <input type="checkbox" name="subjects[]" value="Maths" @if(in_array('Maths',$subjects)) checked @endif> Maths
+            <input type="checkbox" name="subjects[]" value="Science" @if(in_array('Science',$subjects)) checked @endif> Science
+            <input type="checkbox" name="subjects[]" value="English" @if(in_array('English',$subjects)) checked @endif> English
         </div>
 
         <div class="mb-3">
